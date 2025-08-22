@@ -1,0 +1,4 @@
+com/example/student/controller/StudentControllerTest.class
+com/example/student/StudentCrudApplicationIntegrationTest.class
+com/example/student/repository/StudentRepositoryIntegrationTest.class
+com/example/student/service/StudentServiceTest.class

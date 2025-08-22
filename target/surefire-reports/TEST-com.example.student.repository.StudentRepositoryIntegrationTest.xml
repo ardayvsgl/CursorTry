@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.student.repository.StudentRepositoryIntegrationTest" time="2.555" tests="16" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/ardayvsgl/Desktop/SpringBoot Test/CursorTry/target/test-classes:/Users/ardayvsgl/Desktop/SpringBoot Test/CursorTry/target/classes:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.0/spring-boot-starter-web-3.2.0.jar:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.0/spring-boot-starter-3.2.0.jar:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot/3.2.0/spring-boot-3.2.0.jar:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.0/spring-boot-autoconfigure-3.2.0.jar:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.0/spring-boot-starter-logging-3.2.0.jar:/Users/ardayvsgl/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/Users/ardayvsgl/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/Users/ardayvsgl/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/Users/ardayvsgl/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/Users/ardayvsgl/.m2/repository/org/slf4j/jul-to-slf4j/2.0.9/jul-to-slf4j-2.0.9.jar:/Users/ardayvsgl/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/ardayvsgl/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.0/spring-boot-starter-json-3.2.0.jar:/Users/ardayvsgl/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar:/Users/ardayvsgl/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar:/Users/ardayvsgl/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar:/Users/ardayvsgl/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.3/jackson-datatype-jdk8-2.15.3.jar:/Users/ardayvsgl/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.3/jackson-datatype-jsr310-2.15.3.jar:/Users/ardayvsgl/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.3/jackson-module-parameter-names-2.15.3.jar:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.0/spring-boot-starter-tomcat-3.2.0.jar:/Users/ardayvsgl/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.16/tomcat-embed-core-10.1.16.jar:/Users/ardayvsgl/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.16/tomcat-embed-websocket-10.1.16.jar:/Users/ardayvsgl/.m2/repository/org/springframework/spring-web/6.1.1/spring-web-6.1.1.jar:/Users/ardayvsgl/.m2/repository/org/springframework/spring-beans/6.1.1/spring-beans-6.1.1.jar:/Users/ardayvsgl/.m2/repository/io/micrometer/micrometer-observation/1.12.0/micrometer-observation-1.12.0.jar:/Users/ardayvsgl/.m2/repository/io/micrometer/micrometer-commons/1.12.0/micrometer-commons-1.12.0.jar:/Users/ardayvsgl/.m2/repository/org/springframework/spring-webmvc/6.1.1/spring-webmvc-6.1.1.jar:/Users/ardayvsgl/.m2/repository/org/springframework/spring-aop/6.1.1/spring-aop-6.1.1.jar:/Users/ardayvsgl/.m2/repository/org/springframework/spring-context/6.1.1/spring-context-6.1.1.jar:/Users/ardayvsgl/.m2/repository/org/springframework/spring-expression/6.1.1/spring-expression-6.1.1.jar:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.2.0/spring-boot-starter-data-jpa-3.2.0.jar:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.2.0/spring-boot-starter-aop-3.2.0.jar:/Users/ardayvsgl/.m2/repository/org/aspectj/aspectjweaver/1.9.20.1/aspectjweaver-1.9.20.1.jar:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.2.0/spring-boot-starter-jdbc-3.2.0.jar:/Users/ardayvsgl/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/Users/ardayvsgl/.m2/repository/org/springframework/spring-jdbc/6.1.1/spring-jdbc-6.1.1.jar:/Users/ardayvsgl/.m2/repository/org/hibernate/orm/hibernate-core/6.3.1.Final/hibernate-core-6.3.1.Final.jar:/Users/ardayvsgl/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/ardayvsgl/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/ardayvsgl/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/Users/ardayvsgl/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/Users/ardayvsgl/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/Users/ardayvsgl/.m2/repository/com/fasterxml/classmate/1.6.0/classmate-1.6.0.jar:/Users/ardayvsgl/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.4/jaxb-runtime-4.0.4.jar:/Users/ardayvsgl/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.4/jaxb-core-4.0.4.jar:/Users/ardayvsgl/.m2/repository/org/eclipse/angus/angus-activation/2.0.1/angus-activation-2.0.1.jar:/Users/ardayvsgl/.m2/repository/org/glassfish/jaxb/txw2/4.0.4/txw2-4.0.4.jar:/Users/ardayvsgl/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/Users/ardayvsgl/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/ardayvsgl/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar:/Users/ardayvsgl/.m2/repository/org/springframework/data/spring-data-jpa/3.2.0/spring-data-jpa-3.2.0.jar:/Users/ardayvsgl/.m2/repository/org/springframework/data/spring-data-commons/3.2.0/spring-data-commons-3.2.0.jar:/Users/ardayvsgl/.m2/repository/org/springframework/spring-orm/6.1.1/spring-orm-6.1.1.jar:/Users/ardayvsgl/.m2/repository/org/springframework/spring-tx/6.1.1/spring-tx-6.1.1.jar:/Users/ardayvsgl/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/ardayvsgl/.m2/repository/org/springframework/spring-aspects/6.1.1/spring-aspects-6.1.1.jar:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.2.0/spring-boot-starter-validation-3.2.0.jar:/Users/ardayvsgl/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.16/tomcat-embed-el-10.1.16.jar:/Users/ardayvsgl/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/Users/ardayvsgl/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/Users/ardayvsgl/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:/Users/ardayvsgl/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.0/spring-boot-starter-test-3.2.0.jar:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot-test/3.2.0/spring-boot-test-3.2.0.jar:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.0/spring-boot-test-autoconfigure-3.2.0.jar:/Users/ardayvsgl/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/Users/ardayvsgl/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.jar:/Users/ardayvsgl/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/Users/ardayvsgl/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/Users/ardayvsgl/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/Users/ardayvsgl/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/Users/ardayvsgl/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/ardayvsgl/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/Users/ardayvsgl/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/ardayvsgl/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:/Users/ardayvsgl/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar:/Users/ardayvsgl/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/ardayvsgl/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:/Users/ardayvsgl/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/ardayvsgl/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:/Users/ardayvsgl/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar:/Users/ardayvsgl/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/Users/ardayvsgl/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/Users/ardayvsgl/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/Users/ardayvsgl/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/ardayvsgl/.m2/repository/org/springframework/spring-core/6.1.1/spring-core-6.1.1.jar:/Users/ardayvsgl/.m2/repository/org/springframework/spring-jcl/6.1.1/spring-jcl-6.1.1.jar:/Users/ardayvsgl/.m2/repository/org/springframework/spring-test/6.1.1/spring-test-6.1.1.jar:/Users/ardayvsgl/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/Users/ardayvsgl/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/Users/ardayvsgl/.m2/repository/net/bytebuddy/byte-buddy/1.14.10/byte-buddy-1.14.10.jar:/Users/ardayvsgl/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.10/byte-buddy-agent-1.14.10.jar:/Users/ardayvsgl/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Istanbul"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="TR"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/ardayvsgl/Desktop/SpringBoot Test/CursorTry/target/surefire/surefirebooter-20250821162213472_3.jar /Users/ardayvsgl/Desktop/SpringBoot Test/CursorTry/target/surefire 2025-08-21T16-22-13_420-jvmRun1 surefire-20250821162213472_1tmp surefire_0-20250821162213472_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/ardayvsgl/Desktop/SpringBoot Test/CursorTry/target/test-classes:/Users/ardayvsgl/Desktop/SpringBoot Test/CursorTry/target/classes:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.0/spring-boot-starter-web-3.2.0.jar:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.0/spring-boot-starter-3.2.0.jar:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot/3.2.0/spring-boot-3.2.0.jar:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.0/spring-boot-autoconfigure-3.2.0.jar:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.0/spring-boot-starter-logging-3.2.0.jar:/Users/ardayvsgl/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/Users/ardayvsgl/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/Users/ardayvsgl/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/Users/ardayvsgl/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/Users/ardayvsgl/.m2/repository/org/slf4j/jul-to-slf4j/2.0.9/jul-to-slf4j-2.0.9.jar:/Users/ardayvsgl/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/ardayvsgl/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.0/spring-boot-starter-json-3.2.0.jar:/Users/ardayvsgl/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar:/Users/ardayvsgl/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar:/Users/ardayvsgl/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar:/Users/ardayvsgl/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.3/jackson-datatype-jdk8-2.15.3.jar:/Users/ardayvsgl/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.3/jackson-datatype-jsr310-2.15.3.jar:/Users/ardayvsgl/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.3/jackson-module-parameter-names-2.15.3.jar:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.0/spring-boot-starter-tomcat-3.2.0.jar:/Users/ardayvsgl/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.16/tomcat-embed-core-10.1.16.jar:/Users/ardayvsgl/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.16/tomcat-embed-websocket-10.1.16.jar:/Users/ardayvsgl/.m2/repository/org/springframework/spring-web/6.1.1/spring-web-6.1.1.jar:/Users/ardayvsgl/.m2/repository/org/springframework/spring-beans/6.1.1/spring-beans-6.1.1.jar:/Users/ardayvsgl/.m2/repository/io/micrometer/micrometer-observation/1.12.0/micrometer-observation-1.12.0.jar:/Users/ardayvsgl/.m2/repository/io/micrometer/micrometer-commons/1.12.0/micrometer-commons-1.12.0.jar:/Users/ardayvsgl/.m2/repository/org/springframework/spring-webmvc/6.1.1/spring-webmvc-6.1.1.jar:/Users/ardayvsgl/.m2/repository/org/springframework/spring-aop/6.1.1/spring-aop-6.1.1.jar:/Users/ardayvsgl/.m2/repository/org/springframework/spring-context/6.1.1/spring-context-6.1.1.jar:/Users/ardayvsgl/.m2/repository/org/springframework/spring-expression/6.1.1/spring-expression-6.1.1.jar:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.2.0/spring-boot-starter-data-jpa-3.2.0.jar:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.2.0/spring-boot-starter-aop-3.2.0.jar:/Users/ardayvsgl/.m2/repository/org/aspectj/aspectjweaver/1.9.20.1/aspectjweaver-1.9.20.1.jar:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.2.0/spring-boot-starter-jdbc-3.2.0.jar:/Users/ardayvsgl/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/Users/ardayvsgl/.m2/repository/org/springframework/spring-jdbc/6.1.1/spring-jdbc-6.1.1.jar:/Users/ardayvsgl/.m2/repository/org/hibernate/orm/hibernate-core/6.3.1.Final/hibernate-core-6.3.1.Final.jar:/Users/ardayvsgl/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/ardayvsgl/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/ardayvsgl/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/Users/ardayvsgl/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/Users/ardayvsgl/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/Users/ardayvsgl/.m2/repository/com/fasterxml/classmate/1.6.0/classmate-1.6.0.jar:/Users/ardayvsgl/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.4/jaxb-runtime-4.0.4.jar:/Users/ardayvsgl/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.4/jaxb-core-4.0.4.jar:/Users/ardayvsgl/.m2/repository/org/eclipse/angus/angus-activation/2.0.1/angus-activation-2.0.1.jar:/Users/ardayvsgl/.m2/repository/org/glassfish/jaxb/txw2/4.0.4/txw2-4.0.4.jar:/Users/ardayvsgl/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/Users/ardayvsgl/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/ardayvsgl/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar:/Users/ardayvsgl/.m2/repository/org/springframework/data/spring-data-jpa/3.2.0/spring-data-jpa-3.2.0.jar:/Users/ardayvsgl/.m2/repository/org/springframework/data/spring-data-commons/3.2.0/spring-data-commons-3.2.0.jar:/Users/ardayvsgl/.m2/repository/org/springframework/spring-orm/6.1.1/spring-orm-6.1.1.jar:/Users/ardayvsgl/.m2/repository/org/springframework/spring-tx/6.1.1/spring-tx-6.1.1.jar:/Users/ardayvsgl/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/ardayvsgl/.m2/repository/org/springframework/spring-aspects/6.1.1/spring-aspects-6.1.1.jar:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.2.0/spring-boot-starter-validation-3.2.0.jar:/Users/ardayvsgl/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.16/tomcat-embed-el-10.1.16.jar:/Users/ardayvsgl/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/Users/ardayvsgl/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/Users/ardayvsgl/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:/Users/ardayvsgl/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.0/spring-boot-starter-test-3.2.0.jar:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot-test/3.2.0/spring-boot-test-3.2.0.jar:/Users/ardayvsgl/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.0/spring-boot-test-autoconfigure-3.2.0.jar:/Users/ardayvsgl/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/Users/ardayvsgl/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.jar:/Users/ardayvsgl/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/Users/ardayvsgl/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/Users/ardayvsgl/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/Users/ardayvsgl/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/Users/ardayvsgl/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/ardayvsgl/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/Users/ardayvsgl/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/ardayvsgl/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:/Users/ardayvsgl/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar:/Users/ardayvsgl/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/ardayvsgl/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:/Users/ardayvsgl/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/ardayvsgl/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:/Users/ardayvsgl/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar:/Users/ardayvsgl/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/Users/ardayvsgl/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/Users/ardayvsgl/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/Users/ardayvsgl/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/ardayvsgl/.m2/repository/org/springframework/spring-core/6.1.1/spring-core-6.1.1.jar:/Users/ardayvsgl/.m2/repository/org/springframework/spring-jcl/6.1.1/spring-jcl-6.1.1.jar:/Users/ardayvsgl/.m2/repository/org/springframework/spring-test/6.1.1/spring-test-6.1.1.jar:/Users/ardayvsgl/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/Users/ardayvsgl/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/Users/ardayvsgl/.m2/repository/net/bytebuddy/byte-buddy/1.14.10/byte-buddy-1.14.10.jar:/Users/ardayvsgl/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.10/byte-buddy-agent-1.14.10.jar:/Users/ardayvsgl/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/ardayvsgl"/>
+    <property name="user.language" value="tr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/ardayvsgl/Desktop/SpringBoot Test/CursorTry"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/ardayvsgl/Desktop/SpringBoot Test/CursorTry/target/surefire/surefirebooter-20250821162213472_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="21.0.2+13-LTS-58"/>
+    <property name="user.name" value="ardayvsgl"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.6"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/ardayvsgl/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/bs/xdhtmy7x1bjgq7mgw8w0rsrr0000gn/T/"/>
+    <property name="java.version" value="21.0.2"/>
+    <property name="user.dir" value="/Users/ardayvsgl/Desktop/SpringBoot Test/CursorTry"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="69699"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/ardayvsgl/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.2+13-LTS-58"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="65.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[Student CRUD Application] "/>
+  </properties>
+  <testcase name="findStudentsOlderThan_ShouldReturnOlderStudents" classname="com.example.student.repository.StudentRepositoryIntegrationTest" time="0.454">
+    <system-out><![CDATA[16:22:13.977 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.student.repository.StudentRepositoryIntegrationTest]: StudentRepositoryIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:22:14.048 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.student.StudentCrudApplication for test class com.example.student.repository.StudentRepositoryIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2025-08-21T16:22:14.243+03:00  INFO 69699 --- [Student CRUD Application] [           main] c.e.s.r.StudentRepositoryIntegrationTest : Starting StudentRepositoryIntegrationTest using Java 21.0.2 with PID 69699 (started by ardayvsgl in /Users/ardayvsgl/Desktop/SpringBoot Test/CursorTry)
+2025-08-21T16:22:14.244+03:00  INFO 69699 --- [Student CRUD Application] [           main] c.e.s.r.StudentRepositoryIntegrationTest : The following 1 profile is active: "test"
+2025-08-21T16:22:14.436+03:00  INFO 69699 --- [Student CRUD Application] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-21T16:22:14.464+03:00  INFO 69699 --- [Student CRUD Application] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interface.
+2025-08-21T16:22:14.493+03:00  INFO 69699 --- [Student CRUD Application] [           main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2025-08-21T16:22:14.568+03:00  INFO 69699 --- [Student CRUD Application] [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:39e1b585-ccf9-47b3-9302-fb586c677c29;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2025-08-21T16:22:14.737+03:00  INFO 69699 --- [Student CRUD Application] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-21T16:22:14.771+03:00  INFO 69699 --- [Student CRUD Application] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-08-21T16:22:14.790+03:00  INFO 69699 --- [Student CRUD Application] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-21T16:22:14.915+03:00  INFO 69699 --- [Student CRUD Application] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-21T16:22:14.942+03:00  WARN 69699 --- [Student CRUD Application] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-21T16:22:15.340+03:00  INFO 69699 --- [Student CRUD Application] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: drop table if exists students cascade 
+Hibernate: create table students (age integer not null, created_at timestamp(6), id bigint generated by default as identity, updated_at timestamp(6), name varchar(100) not null, email varchar(150) not null unique, address varchar(500), primary key (id))
+2025-08-21T16:22:15.359+03:00  INFO 69699 --- [Student CRUD Application] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-21T16:22:15.544+03:00  INFO 69699 --- [Student CRUD Application] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-21T16:22:15.804+03:00  INFO 69699 --- [Student CRUD Application] [           main] c.e.s.r.StudentRepositoryIntegrationTest : Started StudentRepositoryIntegrationTest in 1.723 seconds (process running for 2.285)
+Hibernate: insert into students (address,age,created_at,email,name,updated_at,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into students (address,age,created_at,email,name,updated_at,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into students (address,age,created_at,email,name,updated_at,id) values (?,?,?,?,?,?,default)
+Hibernate: select s1_0.id,s1_0.address,s1_0.age,s1_0.created_at,s1_0.email,s1_0.name,s1_0.updated_at from students s1_0 where s1_0.age>=?
+]]></system-out>
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/ardayvsgl/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.10/byte-buddy-agent-1.14.10.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+  <testcase name="existsByEmail_WhenEmailExists_ShouldReturnTrue" classname="com.example.student.repository.StudentRepositoryIntegrationTest" time="0.013">
+    <system-out><![CDATA[Hibernate: insert into students (address,age,created_at,email,name,updated_at,id) values (?,?,?,?,?,?,default)
+Hibernate: select s1_0.id from students s1_0 where s1_0.email=? fetch first ? rows only
+]]></system-out>
+  </testcase>
+  <testcase name="saveStudent_ShouldGenerateIdAutomatically" classname="com.example.student.repository.StudentRepositoryIntegrationTest" time="0.007">
+    <system-out><![CDATA[Hibernate: insert into students (address,age,created_at,email,name,updated_at,id) values (?,?,?,?,?,?,default)
+]]></system-out>
+  </testcase>
+  <testcase name="findByEmail_WhenStudentExists_ShouldReturnStudent" classname="com.example.student.repository.StudentRepositoryIntegrationTest" time="0.007">
+    <system-out><![CDATA[Hibernate: insert into students (address,age,created_at,email,name,updated_at,id) values (?,?,?,?,?,?,default)
+Hibernate: select s1_0.id,s1_0.address,s1_0.age,s1_0.created_at,s1_0.email,s1_0.name,s1_0.updated_at from students s1_0 where s1_0.email=?
+]]></system-out>
+  </testcase>
+  <testcase name="findAll_ShouldReturnAllStudents" classname="com.example.student.repository.StudentRepositoryIntegrationTest" time="0.008">
+    <system-out><![CDATA[Hibernate: insert into students (address,age,created_at,email,name,updated_at,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into students (address,age,created_at,email,name,updated_at,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into students (address,age,created_at,email,name,updated_at,id) values (?,?,?,?,?,?,default)
+Hibernate: select s1_0.id,s1_0.address,s1_0.age,s1_0.created_at,s1_0.email,s1_0.name,s1_0.updated_at from students s1_0
+]]></system-out>
+  </testcase>
+  <testcase name="findById_WhenStudentExists_ShouldReturnStudent" classname="com.example.student.repository.StudentRepositoryIntegrationTest" time="0.007">
+    <system-out><![CDATA[Hibernate: insert into students (address,age,created_at,email,name,updated_at,id) values (?,?,?,?,?,?,default)
+]]></system-out>
+  </testcase>
+  <testcase name="saveStudent_ShouldPersistStudent" classname="com.example.student.repository.StudentRepositoryIntegrationTest" time="0.004">
+    <system-out><![CDATA[Hibernate: insert into students (address,age,created_at,email,name,updated_at,id) values (?,?,?,?,?,?,default)
+]]></system-out>
+  </testcase>
+  <testcase name="existsByEmail_WhenEmailDoesNotExist_ShouldReturnFalse" classname="com.example.student.repository.StudentRepositoryIntegrationTest" time="0.004">
+    <system-out><![CDATA[Hibernate: select s1_0.id from students s1_0 where s1_0.email=? fetch first ? rows only
+]]></system-out>
+  </testcase>
+  <testcase name="saveStudent_ShouldSetTimestamps" classname="com.example.student.repository.StudentRepositoryIntegrationTest" time="0.004">
+    <system-out><![CDATA[Hibernate: insert into students (address,age,created_at,email,name,updated_at,id) values (?,?,?,?,?,?,default)
+]]></system-out>
+  </testcase>
+  <testcase name="findByEmail_WhenStudentDoesNotExist_ShouldReturnEmpty" classname="com.example.student.repository.StudentRepositoryIntegrationTest" time="0.003">
+    <system-out><![CDATA[Hibernate: select s1_0.id,s1_0.address,s1_0.age,s1_0.created_at,s1_0.email,s1_0.name,s1_0.updated_at from students s1_0 where s1_0.email=?
+]]></system-out>
+  </testcase>
+  <testcase name="findByNameContainingIgnoreCase_ShouldReturnMatchingStudents" classname="com.example.student.repository.StudentRepositoryIntegrationTest" time="0.011">
+    <system-out><![CDATA[Hibernate: insert into students (address,age,created_at,email,name,updated_at,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into students (address,age,created_at,email,name,updated_at,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into students (address,age,created_at,email,name,updated_at,id) values (?,?,?,?,?,?,default)
+Hibernate: select s1_0.id,s1_0.address,s1_0.age,s1_0.created_at,s1_0.email,s1_0.name,s1_0.updated_at from students s1_0 where upper(s1_0.name) like upper(?) escape '\'
+]]></system-out>
+  </testcase>
+  <testcase name="findByAgeBetween_ShouldReturnStudentsInRange" classname="com.example.student.repository.StudentRepositoryIntegrationTest" time="0.008">
+    <system-out><![CDATA[Hibernate: insert into students (address,age,created_at,email,name,updated_at,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into students (address,age,created_at,email,name,updated_at,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into students (address,age,created_at,email,name,updated_at,id) values (?,?,?,?,?,?,default)
+Hibernate: select s1_0.id,s1_0.address,s1_0.age,s1_0.created_at,s1_0.email,s1_0.name,s1_0.updated_at from students s1_0 where s1_0.age between ? and ?
+]]></system-out>
+  </testcase>
+  <testcase name="countStudentsByAgeRange_ShouldReturnCorrectCount" classname="com.example.student.repository.StudentRepositoryIntegrationTest" time="0.01">
+    <system-out><![CDATA[Hibernate: insert into students (address,age,created_at,email,name,updated_at,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into students (address,age,created_at,email,name,updated_at,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into students (address,age,created_at,email,name,updated_at,id) values (?,?,?,?,?,?,default)
+Hibernate: select count(s1_0.id) from students s1_0 where s1_0.age between ? and ?
+]]></system-out>
+  </testcase>
+  <testcase name="updateStudent_ShouldUpdateStudent" classname="com.example.student.repository.StudentRepositoryIntegrationTest" time="0.005">
+    <system-out><![CDATA[Hibernate: insert into students (address,age,created_at,email,name,updated_at,id) values (?,?,?,?,?,?,default)
+]]></system-out>
+  </testcase>
+  <testcase name="findById_WhenStudentDoesNotExist_ShouldReturnEmpty" classname="com.example.student.repository.StudentRepositoryIntegrationTest" time="0.004">
+    <system-out><![CDATA[Hibernate: select s1_0.id,s1_0.address,s1_0.age,s1_0.created_at,s1_0.email,s1_0.name,s1_0.updated_at from students s1_0 where s1_0.id=?
+]]></system-out>
+  </testcase>
+  <testcase name="deleteStudent_ShouldRemoveStudent" classname="com.example.student.repository.StudentRepositoryIntegrationTest" time="0.011">
+    <system-out><![CDATA[Hibernate: insert into students (address,age,created_at,email,name,updated_at,id) values (?,?,?,?,?,?,default)
+Hibernate: delete from students where id=?
+Hibernate: select s1_0.id,s1_0.address,s1_0.age,s1_0.created_at,s1_0.email,s1_0.name,s1_0.updated_at from students s1_0 where s1_0.id=?
+]]></system-out>
+  </testcase>
+</testsuite>

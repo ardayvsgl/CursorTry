@@ -1,0 +1,9 @@
+/Users/ardayvsgl/Desktop/SpringBoot Test/CursorTry/src/main/java/com/example/student/model/Student.java
+/Users/ardayvsgl/Desktop/SpringBoot Test/CursorTry/src/main/java/com/example/student/exception/DuplicateEmailException.java
+/Users/ardayvsgl/Desktop/SpringBoot Test/CursorTry/src/main/java/com/example/student/controller/GlobalExceptionHandler.java
+/Users/ardayvsgl/Desktop/SpringBoot Test/CursorTry/src/main/java/com/example/student/service/StudentService.java
+/Users/ardayvsgl/Desktop/SpringBoot Test/CursorTry/src/main/java/com/example/student/controller/StudentController.java
+/Users/ardayvsgl/Desktop/SpringBoot Test/CursorTry/src/main/java/com/example/student/exception/StudentNotFoundException.java
+/Users/ardayvsgl/Desktop/SpringBoot Test/CursorTry/src/main/java/com/example/student/StudentCrudApplication.java
+/Users/ardayvsgl/Desktop/SpringBoot Test/CursorTry/src/main/java/com/example/student/controller/ErrorResponse.java
+/Users/ardayvsgl/Desktop/SpringBoot Test/CursorTry/src/main/java/com/example/student/repository/StudentRepository.java
